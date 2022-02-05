@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-namespace App\Http\Controllers;
+
 use Illuminate\Contracts\Auth\StatefulGuard;
 
 use Illuminate\Routing\Controller;
@@ -40,7 +40,7 @@ class AdminController extends Controller
         $this->guard = $guard;
     }
     public function loginForm(){
-        return view('auth.login',['guard'=>'admin']);
+        return view('auth.admin_login',['guard'=>'admin']);
     }
 
     /**
